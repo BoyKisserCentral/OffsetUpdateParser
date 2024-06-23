@@ -87,7 +87,6 @@ Console.WriteLine($"Found {offsets.Count(o => o.NewLine != -1)}/{offsets.Count} 
 foreach (var offset in offsets)
 {
     if (offset.NewLine == -1) continue;
-    Console.WriteLine(offset.NewLine);
     string line = newLines[offset.NewLine];
     bool flag = false;
     string offsetString = "";
